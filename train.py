@@ -33,7 +33,7 @@ mean = x_train.mean(dim=0)
 std = x_train.std(dim=0)
 
 x_train_norm = (x_train - mean) / std
-x_test_norm = (x_test - mean) / std  # FIXED: (x_test - mean) / std, NOT (x_test / mean) / std
+x_test_norm = (x_test - mean) / std  
 
 # 3. Model Definition
 class Net(nn.Module):
