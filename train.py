@@ -28,7 +28,7 @@ y_train = Y[train_indices]
 x_test = X[test_indices]
 y_test = Y[test_indices]
 
-# 2. Normalization (Crucial fix: subtract mean for both train and test!)
+# 2. Normalization 
 mean = x_train.mean(dim=0)
 std = x_train.std(dim=0)
 
